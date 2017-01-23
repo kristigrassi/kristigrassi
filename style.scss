@@ -1,0 +1,135 @@
+// variables
+
+@import 'fonts';
+
+// Poo
+
+$pink: #FEBEF3;
+$navy: #283E4C;
+$yellow: #FFF200;
+$teal: #9CFDEF;
+$salmon: #FD7D7D;
+$light-blue: #CEDBE4;
+$light-pink: #EFDCF3;
+
+
+body {
+	margin: 0;
+	padding: 0;
+	color: $navy;
+  font-family:$font-1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+	margin: 50px 0;
+}
+
+header {
+	background-color: $navy;
+	width: 100%;
+	height: 600px;
+	h2 {
+		color: $light-pink;
+	}
+}
+
+h1 {
+	font-size: 36px;
+	margin: 90px 0 0 0;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.underline {
+	margin: 0 auto;
+    width: 135px;
+    height: 20px;
+    background-color: $pink;
+    position: relative;
+    top: -17px;
+    left: -15px;
+    z-index: 1;
+    margin-bottom: 75px;
+}
+
+.main-container {
+	margin: 0 auto;
+	max-width: 1050px;
+}
+
+.content-container {
+	margin: 0 auto;
+	max-width: 650px;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+   	.navy {
+  		background-color: $navy;
+  	}
+  	.yellow {
+  		background-color: $yellow;
+  	}
+  	.pink {
+  		background-color: $pink;
+  	}
+  	.teal {
+  		background-color: $teal;
+  	}
+  	.salmon {
+  		background-color: $salmon;
+  	}
+  	.white {
+  		background-color: #FFF;
+  	}
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 240px;
+  height: 240px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  padding: 50px;
+  h3 {
+  	margin: 0;
+  	color: $navy;
+  	font-size: 30px;
+  }
+  p {
+  	color: $navy;
+  	font-size: 18px;
+  }
+}
+
+footer {
+	background-color: $navy;
+	width: 100%;
+	padding: 100px 0;
+	h2 {
+		color: $light-blue;
+	}
+	p {
+		color: $light-pink;
+	}
+}
