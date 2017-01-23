@@ -86,7 +86,8 @@ h2 {
 
 .content-container {
   margin: 0 auto;
-  max-width: 650px; }
+  max-width: 650px;
+  padding: 0 20px; }
 
 .flex-container {
   padding: 0;
