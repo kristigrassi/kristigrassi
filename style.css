@@ -59,22 +59,26 @@ h1 {
   position: relative;
   z-index: 2;
   font-weight: bold;
-  font-style: italic; }
+  font-style: italic;
+  position: relative;
+  margin-bottom: 75px; }
+  h1:after {
+    content: '';
+    margin: 0 auto;
+    width: 135px;
+    height: 20px;
+    background-color: #FEBEF3;
+    z-index: 1;
+    display: inline-block;
+    left: 50%;
+    margin-left: -90px;
+    position: absolute;
+    top: 20px;
+    z-index: -1; }
 
 h2 {
   font-family: "Akkurat", monospace;
   font-size: 18px; }
-
-.underline {
-  margin: 0 auto;
-  width: 135px;
-  height: 20px;
-  background-color: #FEBEF3;
-  position: relative;
-  top: -17px;
-  left: -15px;
-  z-index: 1;
-  margin-bottom: 75px; }
 
 .main-container {
   margin: 0 auto;

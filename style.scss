@@ -54,23 +54,28 @@ h1 {
 	z-index: 2;
   font-weight: bold;
   font-style: italic;
+  position:relative;
+  margin-bottom:75px;
+
+  &:after {
+    content: '';
+    margin: 0 auto;
+    width: 135px;
+    height: 20px;
+    background-color: #FEBEF3;
+    z-index: 1;
+    display: inline-block;
+    left: 50%;
+    margin-left: -90px;
+    position: absolute;
+    top: 20px;
+    z-index: -1;
+  }
 }
 
 h2 {
   font-family: $font-2;
   font-size:18px;
-}
-
-.underline {
-	margin: 0 auto;
-    width: 135px;
-    height: 20px;
-    background-color: $pink;
-    position: relative;
-    top: -17px;
-    left: -15px;
-    z-index: 1;
-    margin-bottom: 75px;
 }
 
 .main-container {
