@@ -32,7 +32,7 @@ body {
   margin: 0;
   padding: 0;
   color: #283E4C;
-  font-family: "Garamond"; }
+  font-family: "Garamond", Georgia, Times, serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
@@ -62,7 +62,7 @@ h1 {
   font-style: italic; }
 
 h2 {
-  font-family: "Akkurat";
+  font-family: "Akkurat", monospace;
   font-size: 18px; }
 
 .underline {
