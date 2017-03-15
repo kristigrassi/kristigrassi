@@ -4,73 +4,122 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width">
-		<title>[[TITLE GOES HERE]]</title>
+		<title>Kristi Grassi - Product Designer in Los Angeles, CA</title>
 		<!-- Styles -->
 		<link rel="stylesheet" href="style.css">		
 		<link rel="stylesheet" media="[[query]]" href="enhanced.css">
+		<link rel="stylesheet" href="fakeLoader.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			function preload(arrayOfImages) {
+			    $(arrayOfImages).each(function(){
+			        $('<img/>')[0].src = this;
+			        // Alternatively you could use:
+			        // (new Image()).src = this;
+			    });
+			}
+			// Usage:
+
+			preload([
+			    './images/bg.png',
+			    './images/kristi-grassi.png',
+			]);
+		</script>
 	</head>
 	<body>
 
-	<header>
-		<div class="main-container"> 
-		<h2>is a Product Designer in Los Angeles.</h2>                       
+	<header class="fade-in one">
+		<div class="main-container">
+		<img class="logo" src="./images/kristi-grassi.png" width="471"> 
+		<h2>I lead the Product Design practice at Pivotal Labs in Los Angeles where I work to transform the way organizations approach product by bringing a <span style="font-weight: bold; font-style: italic;">human-centered perspective</span> and putting design thinking into practice.</h2>     
 		</div>
 	</header>
 
-	<div class="main-container">
-		<div class="content-container">
+	<div class="main-container fade-in two">
+		<section class="content-container cf">
 			<h1>What I do</h1>
 
 			<h2>User Research</h2>
 			<p>I look beyond trends and seek to solve real human problems through exploratory and qualatative user research. I go out into the world and talk to real people before making decisons based on assumptions. </p>
 			<hr>
-			<h2>Visual + Interaction Design</h2>
-			<p>I look beyond trends and seek to solve real human problems through exploratory and qualatative user research. I go out into the world and talk to real people before making decisons based on assumptions.</p>
-			<hr>
-			<h2>Code</h2>
-			<p>Just enough front-end to finesse the finished product. Instead of handing mockups over a wall, I work closely with developers.</p>
-			<hr>
-			<h2>Lean + Agile</h2>
-			<p>A deep belief that the only constant in design is change. I adapt quickly to new information and iterate often.</p>
-		</div>
-			<h1>My Work</h1>
-			<ul class="flex-container">  
-				<li class="flex-item navy">
-					<h3 style="color: #FFF;">1</h3>
-					<p style="color: #FFF;">Description</p>
-				</li> 
-				<li class="flex-item yellow">
-					<h3>2</h3>
-					<p>Description</p>
-				</li>  
-				<li class="flex-item pink">
-					<h3>3</h3>
-					<p>Description</p>
-				</li>  
-				<li class="flex-item teal">
-					<h3>4</h3>
-					<p>Description</p>
-				</li>  
-				<li class="flex-item salmon">
-					<h3>5</h3>
-					<p>Description</p>
-				</li>  
-				<li class="flex-item white">
-					<h3>6</h3>
-					<p>Description</p>
-				</li>
-			</ul>
-			<h1>Contact</h1>
+			<h2>User Experience</h2>
+			<p>Design isn’t just about making things look pretty, it’s about solving problems. The way we interact with products is a journey with a beginning and an end, and when we’re enjoying the journey we stick to it. I focus on the charm and elegance that takes place along the way.</p>
+			<hr style="margin-bottom: 0;">
+
+			<div class="box-left">
+				<h2>Lean + Agile</h2>
+				<p>I work closely with developers and product managers in short iterative cyles. No more pixel perfect mockups being handed over a fence.</p>
+			</div>
+			<div class="box-right">
+				<h2>Facilitation</h2>
+				<p>I bring groups together and provide better decision making techniques that move the product forward.</p>
+			</div>
+		
+		</section>
+
+		<h1>My Work</h1>
+		<ul class="flex-container">  
+			<li class="flex-item navy">
+				<h3 style="color: #FFF;">HiveScience</h3>
+				<p style="color: #FFF;">A citizen scientist project that allows beekeepers to report colony health statistics to the EPA.<br><br>
+				<a target="_blank" href="hivescience-project.html">View project</a></p>
+			</li> 
+			<li class="flex-item yellow">
+				<h3>Data Governance</h3>
+				<p>Organizing big structures of data in order to better manage governance and accessibility.<br><br>
+				<a target="_blank" href="provenir-project.html">View project</a></p>
+			</li>  
+			<li class="flex-item pink">
+				<h3>Service design for healthcare</h3>
+				<p>Streamlining government process with design thinking.<br><br>
+				<a target="_blank" href="service-design-project.html">View project</a></p>
+			</li>  
+			<li class="flex-item teal">
+				<h3>NationBuilder</h3>
+				<p>A NationBuilder theme geared towards environmental groups.<br><br>
+				<a href="#">Coming soon</a></p>
+			</li>  
+			<li class="flex-item salmon">
+				<h3 style="color: #FFF;">LingoLoop</h3>
+				<p style="color: #FFF;">A platform that enriches conversational English by focusing on real world subject matter.<br><br>
+				<a href="#">Coming soon</a></p>
+			</li>  
+			<li class="flex-item white">
+				<p>Much of the work I do cannot be publicly shared. If you’d like to see more, please email me.</p>
+			</li>
+		</ul>
+		<h1>Contact</h1>
 	</div>
 	<footer>
 		<div class="content-container">
 			<h2>Please say hello.</h2>
-			<p>I currently lead the product design practice at Pivotal Labs, Los Angeles. Occaisonally I speak on panels and at events, but mostly you’ll find me knitting and watching the Great British Baking Show. hello@kristigrassi.com</p>
+			<p>I’ve worked with a range of clients including London's Central Saint Martins School of Art and Design, The EPA, The US Department of Health and Human Services and a number of startups and organizations with social objectives. Occasionally I speak on panels and at events, but mostly you’ll find me knitting and watching the Great British Baking Show.</p>
+		</div>
+		<div class="main-container">
+			<div class="foot-links">
+				<ul>
+					<li><a href="https://www.instagram.com/kristigrassi/">Instagram</a></li>
+					<li><a href="https://dribbble.com/kristigrassi">Dribbble</a></li>
+					<li><a href="https://www.linkedin.com/in/kristi-grassi-bb009a28">LinkedIn</a></li>
+				</ul>
+			</div>
 		</div>
 	</footer>
 
 
 	<!-- Scripts -->
+		
+        <script src="fakeLoader.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".fakeloader").fakeLoader({
+                    timeToHide:1200,
+                    bgColor:"#FEBEF3",
+                    spinner:"spinner7"
+                });
+            });
+        </script>
+
 	</body>
 </html>

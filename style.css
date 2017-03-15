@@ -34,7 +34,7 @@ body {
   color: #283E4C;
   font-family: "Garamond", Georgia, Times, serif; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   font-weight: normal;
   margin: 0;
   padding: 0;
@@ -42,19 +42,53 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px; }
 
+ul, ol, li {
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
 hr {
-  margin: 50px 0; }
+  margin: 50px 0;
+  border-bottom: 1px solid #283E4C;
+  border-top: 0; }
+
+::selection {
+  background: #FD7D7D;
+  color: #FFF; }
+
+::-moz-selection {
+  /* Code for Firefox */
+  background: #FD7D7D;
+  color: #FFF; }
 
 header {
-  background-color: #283E4C;
+  background-image: url("./images/bg.png");
+  background-size: cover;
   width: 100%;
   height: 600px; }
   header h2 {
-    color: #EFDCF3; }
+    color: #EFDCF3;
+    font-family: 'Garamond';
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 545px;
+    margin-top: 20px; }
+  header ::selection {
+    background: #CEDBE4;
+    color: #FFF; }
+  header ::-moz-selection {
+    /* Code for Firefox */
+    background: #CEDBE4;
+    color: #FFF; }
 
 h1 {
   font-size: 36px;
-  margin: 90px 0 0 0;
+  margin: 90px 0;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -78,16 +112,98 @@ h1 {
 
 h2 {
   font-family: "Akkurat", monospace;
-  font-size: 18px; }
+  font-size: 18px;
+  margin-bottom: 20px; }
+
+p, ul, ol, li {
+  font-size: 18px;
+  line-height: 24px;
+  color: #283E4C; }
+
+.center {
+  display: block;
+  margin: auto;
+  width: 50%; }
 
 .main-container {
   margin: 0 auto;
   max-width: 1050px; }
+  .main-container .logo {
+    margin-top: 200px; }
+
+.cf:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.cf {
+  display: inline-block; }
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%; }
+
+.cf {
+  display: block; }
 
 .content-container {
   margin: 0 auto;
   max-width: 650px;
   padding: 0 20px; }
+
+.box-left {
+  width: 274px;
+  float: left;
+  border-right: 1px solid #283E4C;
+  padding: 50px 50px 0 0; }
+
+.box-right {
+  width: 274px;
+  float: left;
+  padding: 50px 0 0 50px; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s; }
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s; }
+
+.fade-in.two {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s; }
 
 .flex-container {
   padding: 0;
@@ -114,7 +230,6 @@ h2 {
     background-color: #FFF; }
 
 .flex-item {
-  background: tomato;
   padding: 5px;
   width: 240px;
   height: 240px;
@@ -123,20 +238,121 @@ h2 {
   font-weight: bold;
   padding: 50px; }
   .flex-item h3 {
-    margin: 0;
+    margin: 0 0 20px 0;
     color: #283E4C;
-    font-size: 30px; }
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic; }
   .flex-item p {
     color: #283E4C;
     font-size: 18px; }
+
+.project-section p, .project-section blockquote {
+  margin: 30px 0; }
+.project-section h2 {
+  font-family: "Akkurat", monospace;
+  padding: 30px 0; }
+.project-section blockquote {
+  background-color: #CEDBE4;
+  padding: 30px;
+  color: #283E4C; }
+  .project-section blockquote p {
+    margin: 0; }
+  .project-section blockquote h2 {
+    font-family: "Garamond", Georgia, Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+    padding: 0; }
+
+.alt-bg {
+  background-color: #CEDBE4;
+  padding: 50px 0;
+  margin: 50px 0;
+  width: 100%; }
+  .alt-bg section {
+    width: 1250px;
+    margin: 0 auto;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around; }
+    .alt-bg section img {
+      width: 375px;
+      height: 667px;
+      padding: 10px; }
+
+img.mockup {
+  margin-bottom: 50px; }
 
 footer {
   background-color: #283E4C;
   width: 100%;
   padding: 100px 0; }
   footer h2 {
-    color: #CEDBE4; }
+    color: #CEDBE4;
+    font-family: 'Garamond';
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px; }
   footer p {
-    color: #EFDCF3; }
+    color: #EFDCF3;
+    font-size: 24px;
+    line-height: 30px; }
+  footer ::selection {
+    background: #CEDBE4;
+    color: #FFF; }
+  footer ::-moz-selection {
+    /* Code for Firefox */
+    background: #CEDBE4;
+    color: #FFF; }
+  footer .foot-links {
+    text-align: right;
+    margin-top: 50px; }
+    footer .foot-links li {
+      color: #CEDBE4;
+      font-family: "Akkurat", monospace;
+      display: inline-block;
+      font-size: 16px;
+      padding-left: 30px; }
+
+@media only screen and (max-device-width: 651px) {
+  .main-container {
+    width: 100%; }
+
+  header {
+    padding: 0;
+    text-align: center; }
+    header h2 {
+      padding: 0 50px; }
+
+  .main-container .logo {
+    margin-top: 150px; }
+
+  img.logo {
+    width: 300px; }
+
+  .box-left {
+    width: 100%;
+    border-right: 0; }
+
+  .box-right {
+    width: 100%;
+    padding: 0;
+    padding-top: 50px;
+    margin-top: 50px;
+    border-top: 1px solid #283E4C; }
+
+  footer .foot-links {
+    text-align: center; }
+    footer .foot-links ul {
+      padding: 0; }
+    footer .foot-links li {
+      padding-left: 0;
+      padding-right: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
